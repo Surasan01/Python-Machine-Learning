@@ -86,10 +86,10 @@ sgd_clf.fit(x_train,y_train_5)
 # displayimage(x_test[predict_number])
 # displayPredict(sgd_clf,y_test_5[predict_number],x_test[predict_number])
 
-score = cross_val_score(sgd_clf,x_train,y_train_5,cv=4,scoring="accuracy")
+score = cross_val_score(sgd_clf,x_train,y_train_5,cv=3,scoring="accuracy")
 print(score)
 
-y_train_pred = cross_val_predict(sgd_clf,x_train,y_train_5,cv=4)
+y_train_pred = cross_val_predict(sgd_clf,x_train,y_train_5,cv=3)
 cm = confusion_matrix(y_train_5,y_train_pred)
 # print(cm)
 

@@ -53,7 +53,7 @@ y_pred = model.predict(x_test)
 # show real image & predict name
 fig,ax = plt.subplots(4,6)
 for i , axi in enumerate(ax.flat):
-    axi.imshow(x_test[i].reshape(62,47))
+    axi.imshow(x_test[i].reshape(62,47),cmap='bone')
     axi.set(xticks=[],yticks=[])
     axi.set_ylabel(faces.target_names[y_pred[i]].split()[-1],color='green' if y_pred[i] == y_test[i] else 'red')
     print(i)

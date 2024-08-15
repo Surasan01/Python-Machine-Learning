@@ -37,3 +37,4 @@ model.fit(train_features,train_label)
 clf_pred = model.predict(test_features)
 
 print("Accuracy = ",accuracy_score(test_label,clf_pred))
+

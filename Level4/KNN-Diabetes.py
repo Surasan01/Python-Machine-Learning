@@ -35,7 +35,6 @@ for i,k in enumerate(k_neighbors):
     training_score[i]=knn.score(x_train,y_train)
     test_score[i]=knn.score(x_test,y_test)
     print(test_score[i]*100)
-    print(training_score[i]*100)
 
 # plt.title("Compare K value in model")
 # plt.plot(k_neighbors,test_score,label="Test Score")
