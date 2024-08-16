@@ -6,7 +6,7 @@ from sklearn.metrics import classification_report,accuracy_score
 iris_dataset = load_iris()
 x_train,x_test,y_train,y_test = train_test_split(iris_dataset['data'],iris_dataset['target'],test_size=0.4,random_state=0)
 
-# print(x_train)
+print(x_train)
 
 # Model
 knn = KNeighborsClassifier(n_neighbors=5) # ดูตัวเปรียบเทียบกี่ตัว

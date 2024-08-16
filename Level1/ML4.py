@@ -12,7 +12,7 @@ mnist = {
     "target":mnist_raw["label"][0]
 }
 
-# print(mnist["data"])
+print(mnist["target"])
 x = mnist["data"]
 y = mnist["target"]
 

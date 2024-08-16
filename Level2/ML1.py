@@ -1,7 +1,7 @@
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 iris_dataset = load_iris()
-# print(iris_dataset.data.shape)
+print(iris_dataset.data.shape)
 # (150,4)
 # 75% , 25%
 

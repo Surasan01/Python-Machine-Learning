@@ -8,13 +8,13 @@ from sklearn.metrics import classification_report,confusion_matrix
 df=pd.read_csv("diabetes.csv")
 
 # print(df.head())
-# print(df.shape)
+print(df)
 
 #data
 x = df.drop("Outcome",axis=1).values # values ทำให้เป็น array 2 มิติ
 # outcome data
 y = df['Outcome'].values
-# print(x)
+print(x)
 # print(y)
 
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.4)
